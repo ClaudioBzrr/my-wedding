@@ -3,7 +3,7 @@ import Logo from '@/assets/images/logo.png'
 
 export function Invite(){
     return(
-        <VStack  gap={0} align={'center'} justify={'flex-start'}>
+        <VStack h={'100vh'}  gap={0} align={'center'} justify={'center'}>
             <Image objectFit={'contain'} maxW={{base:'xl',md:'xl'}} maxH={{base:'xs',md:'xl'}} src={Logo}/>
             <Text
                 w={'full'}

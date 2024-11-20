@@ -8,12 +8,12 @@ export function SectionLayout({children}:{children:React.ReactNode}) {
     return(
         <VStack  maxW={'100vw'} maxH={'100vh'} alignItems={'center'} justifyContent={'center'} gap={0} align={'start'}>
             <Box zIndex={-1}>
-                <Image position={'absolute'} top={0} left={0} maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose1}/>
-                <Image position={'absolute'} top={0} right={0} maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose2}/>
-                <Image position={'absolute'} bottom={0} left={0} maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose3}/>
-                <Image position={'absolute'} bottom={0} right={0}  maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose4}/>
+                <Image position={'fixed'} top={0} left={0} maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose1}/>
+                <Image position={'fixed'} top={0} right={0} maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose2}/>
+                <Image position={'fixed'} bottom={0} left={0} maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose3}/>
+                <Image position={'fixed'} bottom={0} right={0}  maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose4}/>
             </Box>
-            <Stack  maxH={'100vh'} maxW={{base:'60vw',md:'40vw'}} bg={'transparent'}  gap={0}>{children}</Stack>
+            <Stack  maxW={{base:'60vw',md:'40vw'}} bg={'transparent'}  gap={0}>{children}</Stack>
         </VStack>
     )
 }
