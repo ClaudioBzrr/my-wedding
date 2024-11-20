@@ -1,11 +1,19 @@
-import { Image, Stack, VStack } from "@chakra-ui/react";
-import Roses from '@/assets/images/roses-serenity.png'
+import { Box, Image, Stack, VStack } from "@chakra-ui/react";
+import Rose1 from '@/assets/images/rose-1.png'
+import Rose2 from '@/assets/images/rose-2.png'
+import Rose3 from '@/assets/images/rose-3.png'
+import Rose4 from '@/assets/images/rose-4.png'
 
-export function SectionLayout({children}:{children: React.ReactNode}){
+export function SectionLayout({children}:{children:React.ReactNode}) {
     return(
-        <VStack w={'full'} h={'full'} alignItems={'center'} justifyContent={'center'} gap={0} align={'start'}>
-            <Image w={'100vw'} h={'100vh'} src={Roses}/>
-            <Stack w={'full'} h={'full'} maxH={'90vh'}  maxW={{base:'90vw',md:'60vw'}}  borderRadius={'4xl'} p={48} backdropFilter={'blur(35px)'} position={'absolute'} gap={0}>{children}</Stack>
+        <VStack  maxW={'100vw'} maxH={'100vh'} alignItems={'center'} justifyContent={'center'} gap={0} align={'start'}>
+            <Box zIndex={-1}>
+                <Image position={'absolute'} top={0} left={0} maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose1}/>
+                <Image position={'absolute'} top={0} right={0} maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose2}/>
+                <Image position={'absolute'} bottom={0} left={0} maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose3}/>
+                <Image position={'absolute'} bottom={0} right={0}  maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose4}/>
+            </Box>
+            <Stack  maxH={'100vh'} maxW={{base:'60vw',md:'40vw'}} bg={'transparent'}  gap={0}>{children}</Stack>
         </VStack>
     )
 }

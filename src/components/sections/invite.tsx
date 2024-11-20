@@ -4,10 +4,11 @@ import Logo from '@/assets/images/logo.png'
 export function Invite(){
     return(
         <VStack  gap={0} align={'center'} justify={'flex-start'}>
-            <Image  src={Logo}/>
+            <Image objectFit={'contain'} maxW={{base:'xl',md:'xl'}} maxH={{base:'xs',md:'xl'}} src={Logo}/>
             <Text
+                w={'full'}
                 color={'#736C5F'}
-                fontSize={{base: '2xl', md: '8xl'}} 
+                fontSize={{base: '3xl', md: '8xl'}} 
                 style={{fontFamily: 'Sacramento'}}> Imaculada & Claudio</Text>
         </VStack>
     )

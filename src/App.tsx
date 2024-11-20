@@ -8,11 +8,10 @@ export function App() {
 
   return (
     <VStack gap={0} w={'100%'}>
-      <HStack><ColorModeButton position={'absolute'} top={2} right={2} /></HStack>
-      <VStack gap={0}>
+      <HStack><ColorModeButton color={'white'} size={'xs'} _hover={{bg:'transparent', backdropFilter:'blur(2px)'}} position={'absolute'} top={2} right={2} /></HStack>
+      <VStack w={'100vw'} h={'100vh'} align={'center'} justify={'center'} gap={0}>
           {/* Section Components here */}
           <SectionLayout children={<Invite/>}/>
-          {/* <Invite/> */}
       </VStack>
     </VStack>
   )
