@@ -2,6 +2,7 @@ import { HStack, VStack } from "@chakra-ui/react";
 import { ColorModeButton } from "@/components/ui/color-mode";
 import { Invite } from "./components/sections/invite";
 import { SectionLayout } from "./components/section-layout";
+import { BibleMessage } from "./components/sections/bible-message";
 
 export function App() {
 
@@ -12,6 +13,7 @@ export function App() {
       <VStack maxW={'100vw'} minH={'100vh'} align={'center'} justify={'center'} gap={0}>
           {/* Section Components here */}
           <SectionLayout children={<Invite/>}/>
+          <SectionLayout children={<BibleMessage/>}/>
       </VStack>
     </VStack>
   )
