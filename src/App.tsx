@@ -3,6 +3,7 @@ import { ColorModeButton } from "@/components/ui/color-mode";
 import { Invite } from "./components/sections/invite";
 import { SectionLayout } from "./components/section-layout";
 import { BibleMessage } from "./components/sections/bible-message";
+import { Details } from "./components/sections/details";
 
 export function App() {
 
@@ -14,6 +15,7 @@ export function App() {
           {/* Section Components here */}
           <SectionLayout children={<Invite/>}/>
           <SectionLayout children={<BibleMessage/>}/>
+          <SectionLayout children={<Details/>}/>
       </VStack>
     </VStack>
   )

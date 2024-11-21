@@ -13,7 +13,7 @@ export function SectionLayout({children}:{children:React.ReactNode}) {
                 <Image position={'fixed'} bottom={0} left={0} maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose3}/>
                 <Image position={'fixed'} bottom={0} right={0}  maxW={{sm:'sm',base:'xs'}} maxH={{xl:'sm',base:'1/4'}} objectFit={'fill'} src={Rose4}/>
             </Box>
-            <Stack  maxW={{base:'60vw',md:'50vw'}} bg={'transparent'}  gap={0}>{children}</Stack>
+            <Stack  maxW={{base:'60vw',md:'50vw'}} bg={'transparent'}   gap={0}>{children}</Stack>
         </VStack>
     )
 }
