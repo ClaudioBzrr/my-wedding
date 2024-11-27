@@ -1,9 +1,10 @@
 import { HStack, VStack } from "@chakra-ui/react";
 import { ColorModeButton } from "@/components/ui/color-mode";
-import { Invite } from "./components/sections/invite";
-import { SectionLayout } from "./components/section-layout";
-import { BibleMessage } from "./components/sections/bible-message";
-import { Details } from "./components/sections/details";
+import { Invite } from "@/components/sections/invite";
+import { SectionLayout } from "@/components/section-layout";
+import { BibleMessage } from "@/components/sections/bible-message";
+import { Details } from "@/components/sections/details";
+import { Actions } from "@/components/sections/actions";
 
 export function App() {
 
@@ -16,6 +17,7 @@ export function App() {
           <SectionLayout children={<Invite/>}/>
           <SectionLayout children={<BibleMessage/>}/>
           <SectionLayout children={<Details/>}/>
+          <SectionLayout children={<Actions/>}/>
       </VStack>
     </VStack>
   )
