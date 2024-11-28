@@ -30,10 +30,10 @@ export function Actions() {
                         </DialogTrigger>
                         <DialogBackdrop backdropFilter={'blur(10px)'}/>
                         <DialogContent>
-                            <DialogHeader css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Quer dar um presente para o casal?</DialogHeader>
                             <DialogCloseTrigger/>
+                            <DialogHeader pt={12} css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Quer dar um presente para o casal?</DialogHeader>
                             <DialogBody>
-                                <Text pb={5} lineHeight={'normal'} css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Contribua com a <Mark color={'blue.400'} css={{fontFamily: 'Authentic Signature',fontSize: '4xl'}}>❤ Operação Lua de Mel ❤</Mark></Text>
+                                <Text pb={5} lineHeight={'normal'} css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Contribua com a <Mark color={'blue.400'} css={{fontFamily: 'Authentic Signature',fontSize: {base:'xl',md:'5xl'}}}>❤ Operação Lua de Mel ❤</Mark></Text>
                                 <VStack align={'center'} justify={'center'}>
                                     <ClipboardRoot>
                                         <ClipboardLabel mr={2}>Chave pix (CPF): 06925896352 </ClipboardLabel>
