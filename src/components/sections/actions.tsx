@@ -1,6 +1,5 @@
 import { HStack, Text, VStack } from "@chakra-ui/react";
 import { ActionButton } from "../action-button";
-// import { IoLocationOutline } from "react-icons/io5";
 import { PiMapPinAreaBold } from "react-icons/pi";
 import { FiCheckCircle } from "react-icons/fi";
 import { LuGift } from "react-icons/lu";
@@ -12,8 +11,8 @@ export function Actions() {
     const locationChurch:string = 'https://maps.app.goo.gl/2nKQTGgGkzayKR9s5'
     const locationLunch:string = 'https://maps.app.goo.gl/SXWuSuMKaAx29KdVA'
     return (
-        <VStack align={'center'} justify={'center'} w={'full'} minH={'100vh'}>
-            <Text textAlign={'center'} css={{fontFamily: 'Authentic Signature', color: 'blue.400',}} fontSize={{base: '2xl', md: '7xl'}}>Clíque nos ícones para acessar</Text>
+        <VStack align={'center'} justify={{base:'center',md:'space-evenly'}} w={'full'} minH={'100vh'}>
+            <Text pb={{base:20,md:0}} textAlign={'center'} css={{fontFamily: 'Authentic Signature', color: 'blue.400',}} fontSize={{base: '2xl', md: '7xl'}}>Clíque nos ícones para acessar</Text>
             <VStack align={'center'} justify={'center'}  w={'full'} h={'full'} gap={{base:5,md:12}}>
                 <HStack align={'center'} justify={'center'} gap={{base:5,md:12}} w={'full'} h={'full'}>
                     <ActionButton onAction={() => {window.open(locationChurch,'_blank')}} icon={<PiMapPinAreaBold/>} text={'Localização da cerimônia'} />
