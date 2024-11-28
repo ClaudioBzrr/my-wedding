@@ -5,7 +5,6 @@ import { FiCheckCircle } from "react-icons/fi";
 import { LuGift } from "react-icons/lu";
 import { DialogBackdrop, DialogBody, DialogCloseTrigger, DialogContent, DialogHeader, DialogRoot, DialogTrigger } from "../ui/dialog";
 import QRCode from '@/assets/images/qrcode.jpg'
-import { Button } from "../ui/button";
 import { ClipboardIconButton, ClipboardLabel, ClipboardRoot } from "../ui/clipboard";
 
 export function Actions() {
