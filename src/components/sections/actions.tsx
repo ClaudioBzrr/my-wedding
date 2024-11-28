@@ -1,8 +1,12 @@
-import { HStack, Text, VStack } from "@chakra-ui/react";
+import {  HStack, Image, Mark, Text, VStack } from "@chakra-ui/react";
 import { ActionButton } from "../action-button";
 import { PiMapPinAreaBold } from "react-icons/pi";
 import { FiCheckCircle } from "react-icons/fi";
 import { LuGift } from "react-icons/lu";
+import { DialogBackdrop, DialogBody, DialogCloseTrigger, DialogContent, DialogHeader, DialogRoot, DialogTrigger } from "../ui/dialog";
+import QRCode from '@/assets/images/qrcode.jpg'
+import { Button } from "../ui/button";
+import { ClipboardIconButton, ClipboardLabel, ClipboardRoot } from "../ui/clipboard";
 
 export function Actions() {
     const confirmationMessage:string ='Olá, gostaria de confirmar minha presença na sua cerimônia de casamento do dia 01/02/2024.'
@@ -20,7 +24,27 @@ export function Actions() {
                 </HStack>
                 <HStack align={'center'} justify={'center'} gap={{base:5,md:12}} w={'full'} h={'full'}>
                     <ActionButton onAction={() => { window.open(whatsappLink,'_blank')}} icon={<FiCheckCircle/>} text={'Confirme sua presença'} />
-                    <ActionButton onAction={() => {}} icon={<LuGift/>} text={'Presente'} />
+                    <DialogRoot size={{base:'xs',md:'md'}} placement={'center'}>
+                        <DialogTrigger>
+                            <ActionButton onAction={() => {}} icon={<LuGift/>} text={'Presente'} />
+                        </DialogTrigger>
+                        <DialogBackdrop backdropFilter={'blur(10px)'}/>
+                        <DialogContent>
+                            <DialogHeader css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Quer dar um presente para o casal?</DialogHeader>
+                            <DialogCloseTrigger/>
+                            <DialogBody>
+                                <Text pb={5} lineHeight={'normal'} css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Contribua com a <Mark color={'blue.400'} css={{fontFamily: 'Authentic Signature',fontSize: '4xl'}}>❤ Operação Lua de Mel ❤</Mark></Text>
+                                <VStack align={'center'} justify={'center'}>
+                                    <ClipboardRoot>
+                                        <ClipboardLabel mr={2}>Chave pix (CPF): 06925896352 </ClipboardLabel>
+                                        <ClipboardIconButton/>
+                                    </ClipboardRoot>
+                                    <Image objectFit={'contain'} maxW={{base:'md',md:'md'}} maxH={{base:'xs',md:'xl'}} src={QRCode}/>
+                                    <Text  css={{fontFamily: 'Sour Gummy',fontSize: 'md'}} textAlign={'center'}>Imaculada Nayra de Oliveira Souza</Text>
+                                </VStack>
+                            </DialogBody>
+                        </DialogContent>
+                    </DialogRoot>
                 </HStack>
             </VStack>
         </VStack>
