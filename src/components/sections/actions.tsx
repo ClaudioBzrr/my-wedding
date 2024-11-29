@@ -1,14 +1,14 @@
 import {  HStack, Image, Mark, Text, VStack } from "@chakra-ui/react";
 import { ActionButton } from "../action-button";
-import { PiMapPinAreaBold } from "react-icons/pi";
 import { FiCheckCircle } from "react-icons/fi";
+import { PiMapPinAreaBold } from "react-icons/pi";
 import { LuGift } from "react-icons/lu";
 import { DialogBackdrop, DialogBody, DialogCloseTrigger, DialogContent, DialogHeader, DialogRoot, DialogTrigger } from "../ui/dialog";
 import QRCode from '@/assets/images/qrcode.jpg'
 import { ClipboardIconButton, ClipboardLabel, ClipboardRoot } from "../ui/clipboard";
 
 export function Actions() {
-    const confirmationMessage:string ='Olá, gostaria de confirmar minha presença na sua cerimônia de casamento do dia 01/02/2024.'
+    const confirmationMessage:string ='Olá, gostaria de confirmar minha presença na sua cerimônia de casamento do dia 01/02/2025.'
     const encondedMessage:string = encodeURIComponent(confirmationMessage)
     const whatsappLink = `https://api.whatsapp.com/send?phone=5585989349171&text=${encondedMessage}`
     const locationChurch:string = 'https://maps.app.goo.gl/2nKQTGgGkzayKR9s5'
