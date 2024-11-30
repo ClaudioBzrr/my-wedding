@@ -15,7 +15,7 @@ export function Actions() {
     const locationLunch:string = 'https://maps.app.goo.gl/SXWuSuMKaAx29KdVA'
     return (
         <VStack align={'center'} justify={{base:'center',md:'space-evenly'}} w={'full'} minH={'100vh'}>
-            <Text pb={{base:20,md:0}} textAlign={'center'} css={{fontFamily: 'Authentic Signature', color: 'blue.400',}} fontSize={{base: '2xl', md: '7xl'}}>Clíque nos ícones para acessar</Text>
+            <Text pb={{base:20,md:0}} textAlign={'center'} css={{fontFamily: 'Sacramento', color: 'blue.400',}} fontSize={{base: '4xl', md: '7xl'}}>Clique nos ícones para acessar</Text>
             <VStack align={'center'} justify={'center'}  w={'full'} h={'full'} gap={{base:5,md:12}}>
                 <HStack align={'center'} justify={'center'} gap={{base:5,md:12}} w={'full'} h={'full'}>
                     <ActionButton onAction={() => {window.open(locationChurch,'_blank')}} icon={<PiMapPinAreaBold/>} text={'Localização da cerimônia'} />
@@ -32,13 +32,13 @@ export function Actions() {
                             <DialogCloseTrigger/>
                             <DialogHeader pt={12} css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Quer dar um presente para o casal?</DialogHeader>
                             <DialogBody>
-                                <Text pb={5} lineHeight={'normal'} css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Contribua com a <Mark color={'blue.400'} css={{fontFamily: 'Authentic Signature',fontSize: {base:'xl',md:'5xl'}}}>❤ Operação Lua de Mel ❤</Mark></Text>
+                                <Text pb={5} lineHeight={'normal'} css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Contribua com a <Mark color={'blue.400'} css={{fontFamily: 'Authentic Signature',fontSize: {base:'4xl',md:'5xl'}}}>❤ Operação Lua de Mel ❤</Mark></Text>
                                 <VStack align={'center'} justify={'center'}>
                                     <ClipboardRoot>
                                         <ClipboardLabel mr={2}>Chave pix (CPF): 06925896352 </ClipboardLabel>
                                         <ClipboardIconButton/>
                                     </ClipboardRoot>
-                                    <Image objectFit={'contain'} maxW={{base:'md',md:'md'}} maxH={{base:'xs',md:'xl'}} src={QRCode}/>
+                                    <Image objectFit={'contain'} maxW={{base:'xs',md:'md'}} maxH={{base:'xs',md:'xl'}} src={QRCode}/>
                                     <Text  css={{fontFamily: 'Sour Gummy',fontSize: 'md'}} textAlign={'center'}>Imaculada Nayra de Oliveira Souza</Text>
                                 </VStack>
                             </DialogBody>
