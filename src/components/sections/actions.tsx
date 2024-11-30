@@ -31,8 +31,8 @@ export function Actions() {
                         <DialogContent>
                             <DialogCloseTrigger/>
                             <DialogHeader pt={12} css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Quer dar um presente para o casal?</DialogHeader>
-                            <DialogBody>
-                                <Text pb={5} lineHeight={'normal'} css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Contribua com a <Mark color={'blue.400'} css={{fontFamily: 'Authentic Signature',fontSize: {base:'4xl',md:'5xl'}}}>❤ Operação Lua de Mel ❤</Mark></Text>
+                            <DialogBody alignItems={'center'} justifyContent={'center'}>
+                                <Text pb={5} lineHeight={'normal'} css={{fontFamily: 'Sour Gummy',fontSize: 'xl'}} textAlign={'center'}>Contribua com a <Mark color={'blue.400'} css={{fontWeight:'bold',fontFamily: 'Sacramento',fontSize: {base:32,md:'5xl'}}}>❤ Operação Lua de Mel ❤</Mark></Text>
                                 <VStack align={'center'} justify={'center'}>
                                     <ClipboardRoot>
                                         <ClipboardLabel mr={2}>Chave pix (CPF): 06925896352 </ClipboardLabel>
