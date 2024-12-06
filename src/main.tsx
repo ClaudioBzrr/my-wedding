@@ -4,7 +4,7 @@ import {App} from './App'
 import { Provider } from '@/components/ui/provider'
 
 createRoot(document.getElementById('root')!).render(
-  <Provider defaultTheme='system'>
+  <Provider defaultTheme='light'>
     <App />
   </Provider>
 )
